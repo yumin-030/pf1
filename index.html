@@ -3,180 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to do list</title>
+    <title>산리오 코리아 Sanrio Korea</title>
     <link rel="stylesheet" href="./css/reset_.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div class="images"></div>
-    <div class="wrap">
-        <div class="top">
-            <p><span></span>의 To Do List★</p>
-            <div id="here">
-                <span class="location"></span>
-                <img src="" alt="">
-                <span class="weather"></span>
+    <header>
+        <div class="head_wrap">
+            <h1><a href="#"><img src="./images/logo.png" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">캐릭터 소개</a>
+                        <ul class="nav_sub">
+                            <li><a href="#">헬로키티</a></li>
+                            <li><a href="#">마이멜로디</a></li>
+                            <li><a href="#">쿠로미</a></li>
+                            <li><a href="#">그 외 친구들</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="nav_sub">
+                            <li><a href="#">프로모션</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">플레이스</a>
+                        <ul class="nav_sub">
+                            <li><a href="#">헬로키티 아일랜드</a></li>
+                            <li><a href="#">롯데호텔 제주</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="nav_sub">
+                            <li><a href="#">오프라인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul class="nav_sub">
+                            <li><a href="#">기업 소개</a></li>
+                            <li><a href="#">기업 역사</a></li>
+                            <li><a href="#">사업 영역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객서비스</a>
+                        <ul class="nav_sub">
+                            <li><a href="#">고객지원</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <form action="#">
+                <input type="text">
+                <button type="submit"><img src="./images/icon_search.png" alt="돋보기아이콘"></button>
+            </form>
+        </div>
+    </header>
+    <div id="visual">
+        <div class="main">
+            <div class="wrap">
+                <div class="slider">
+                    <div class="main_bg slide_1">
+                        <img src="./images/main_bg1.jpg" alt="bg">
+                        <div class="text">
+                            <h2>FC 세븐일레븐<br>앙코르 팝업스토어 in 부산</h2>
+                            <a href="#">자세히보기<img src="./images/next_pink.png" alt="화살표"></a>
+                        </div>
+                    </div>
+                    <div class="main_bg slide_2">
+                        <img src="./images/main_bg2.png" alt="bg">
+                        <div class="text">
+                            <h2>케이스티파이,<br>시나모롤 콜라보 컬렉션 출시</h2>
+                            <a href="#">자세히보기<img src="./images/next_pink.png" alt="화살표"></a>
+                        </div>
+                    </div>
+                    <div class="main_bg slide_3">
+                        <img src="./images/main_bg3.jpg" alt="bg">
+                        <div class="text">
+                            <h2>맥도날드 ‘산리오×유희왕!’<br>해피밀 토이 2차 라인업 출시</h2>
+                            <a href="#">자세히보기<img src="./images/next_pink.png" alt="화살표"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="controlls">
+                    <div class="btns">
+                        <button class="prev"><img src="./images/prev_pink.png" alt="prev"></button>
+                        <button class="next"><img src="./images/next_pink.png" alt="next"></button>
+                    </div>
+                    <div class="pager">
+                        <span class="add_color"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="crt">
+                <h2>Characters</h2>
+                <a href="#">VIEW MORE <img src="./images/next_pink.png" alt="next"></a>
+                <section>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt1.png" alt="crt">
+                                    <img src="./images/crt1_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>헬로키티</b>
+                                    <p>HELLO KITTY</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt2.png" alt="crt">
+                                    <img src="./images/crt2_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>마이멜로디</b>
+                                    <p>MY MELODY</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt3.png" alt="crt">
+                                    <img src="./images/crt3_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>쿠로미</b>
+                                    <p>KUROMI</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt4.png" alt="crt">
+                                    <img src="./images/crt4_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>폼폼푸린</b>
+                                    <p>POMPOMPURIN</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt5.png" alt="crt">
+                                    <img src="./images/crt5_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>시나모롤</b>
+                                    <p>CINNAMOROLL</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt6.png" alt="crt">
+                                    <img src="./images/crt6_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>리틀트윈스타</b>
+                                    <p>LittleTwinStars</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt7.png" alt="crt">
+                                    <img src="./images/crt7_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>포차코</b>
+                                    <p>POCHACCO</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="crts">
+                                    <img src="./images/crt8.png" alt="crt">
+                                    <img src="./images/crt8_ov.png" alt="crt_ov">
+                                </div>
+                                <div class="_name">
+                                    <b>케로케로케로피</b>
+                                    <p>KEROKEROKEROPPI</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="news">
+                <h2>News</h2>
+                <a href="#">VIEW MORE <img src="./images/next_pink.png" alt="next"></a>
+                <section>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/main_bg1.jpg" alt="news">
+                            </a>
+                            <div class="name">
+                                <b>FC 세븐일레븐 앙코르 팝업스토어 in 부산</b>
+                                <a href="#">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/main_bg2.png" alt="news">
+                            </a>
+                            <div class="name">
+                                <b>케이스티파이, 시나모롤 콜라보 컬렉션 출시</b>
+                                <a href="#">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/main_bg3.jpg" alt="news">
+                            </a>
+                            <div class="name">
+                                <b>맥도날드 ‘산리오×유희왕!’ 해피밀 토이 2차 라인업 출시</b>
+                                <a href="#">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/main_bg1.jpg" alt="news">
+                            </a>
+                            <div class="name">
+                                <b>FC 세븐일레븐 앙코르 팝업스토어 in 부산</b>
+                                <a href="#">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/main_bg2.png" alt="news">
+                            </a>
+                            <div class="name">
+                                <b>케이스티파이, 시나모롤 콜라보 컬렉션 출시</b>
+                                <a href="#">MORE</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/main_bg3.jpg" alt="news">
+                            </a>
+                            <div class="name">
+                                <b>맥도날드 ‘산리오×유희왕!’ 해피밀 토이 2차 라인업 출시</b>
+                                <a href="#">MORE</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="brand">
+                <h2>Brand</h2>
+                <ul>
+                    <li>
+                        <img src="./images/brand_icon1.png" alt="icon">
+                        <h3>기업 소개</h3>
+                        <p>맑고 깨끗한 강가에<br>문화를 쌓아 올리자.</p>
+                        <a href="#">MORE</a>
+                    </li>
+                    <li>
+                        <img src="./images/brand_icon2.png" alt="icon">
+                        <h3>기업 역사</h3>
+                        <p>산리오의 히스토리를<br>확인하세요.</p>
+                        <a href="#">MORE</a>
+                    </li>
+                    <li>
+                        <img src="./images/brand_icon3.png" alt="icon">
+                        <h3>사업 영역</h3>
+                        <p>산리오가 소셜커뮤니케이션을<br>시작합니다.</p>
+                        <a href="#">MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="place">
+                <h2>Place</h2>
+                <section>
+                    <div class="bg"><img src="./images/place_kitty.png" alt="kitty"></div>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><img src="./images/place_icon_home.png" alt="icon"></li>
+                                <li><img src="./images/place_icon_call.png" alt="icon"></li>
+                                <li><img src="./images/place_icon_calendar.png" alt="icon"></li>
+                                <li><img src="./images/place_icon_marker.png" alt="icon"></li>
+                                <li><img src="./images/place_icon_computer.png" alt="icon"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>헬로키티 아일랜드 제주</li>
+                                <li>064-792-6114</li>
+                                <li>9:00 ~ 18:00<br>* 하절기(7월~8월):<br>9:00 ~ 20:00</li>
+                                <li>제주특별자치도 서귀포시<br>안덕면 한창로 340<br>헬로키티 아일랜드</li>
+                                <li><a href="#"><img src="./images/place_icon_heart.png" alt="icon">GO!</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>롯데호텔 제주 헬로키티 룸</li>
+                                <li>064-731-1000</li>
+                                <li>상시</li>
+                                <li>제주특별자치도 서귀포시<br>중문광관로 72번길 35,<br>롯데호텔제주</li>
+                                <li><a href="#"><img src="./images/place_icon_heart.png" alt="icon">GO!</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </div>
-        <div class="days">
-            <p><span class="year"></span>년</p>
-            <p><span class="month"></span>월</p>
-            <p><span class="date"></span>일</p>
-        </div>
-        <div class="clock">
-            <span class="h">00</span> : <span class="m">00</span> <b> : </b>
-            <span class="s">00</span>
-        </div>
-        <div class="list">
-            <h2>To Do List</h2>
-            <ul></ul>
-        </div>
-        <div class="bottom">
+    </div>
+    <footer>
+        <div class="ft_wrap">
+            <h2><img src="./images/logo.png" alt="logo"></h2>
             <ul>
-                <li class="change">User Change</li>
-                <li class="add_list">Add List</li>
+                <li>
+                    <h3>오시는 길</h3>
+                    <ul>
+                        <li>
+                            <b>OUR OFFICE</b>
+                            <p>서울시 강남구 테헤란로 509, 4층 (삼성동, 엔씨타워1)<br>509, TEHERANRO, GANGNAM-GU, SEOUL (4TH FLOOR, SAMSUNG-DONG, NC TOWER 1)</p>
+                        </li>
+                        <li>
+                            <b>EMAIL</b>
+                            <span>webmaster&#64;sanriokorea.co.kr</span>
+                        </li>
+                        <li>
+                            <b>TEL</b>
+                            <p>&#43;82 (0) 2-543-3810</p>
+                        </li>
+                        <li>
+                            <b>FAX</b>
+                            <p>&#43;82 (0) 2-543-2904</p>
+                            <div class="icons">
+                                <a href="#"><img src="./images/ft_icon_youtube.png" alt="youtube"></a>
+                                <a href="#"><img src="./images/ft_icon_insta.png" alt="insta"></a>
+                                <a href="#"><img src="./images/ft_icon_face.png" alt="facebook"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>문의하기</h3>
+                    <ul>
+                        <li>
+                            <p>각 상담문의 내용을 다음의 카테고리 메일로 보내주시면 담당자가 확인 후 연락드리겠습니다.</p>
+                        </li>
+                        <li>
+                            <b>비즈니스 관련 문의</b>
+                            <p>상담 문의서 및 구비자료 제출</p>
+                            <span>business&#64;sanriokorea.co.kr</span>
+                        </li>
+                        <li>
+                            <b>침해사례제보</b>
+                            <p>온·오프라인 상관없이 산리오 캐릭터 관련 침해 의심 사례의 대한 정보</p>
+                            <span>law&#64;sanriokorea.co.kr</span>
+                        </li>
+                        <li>
+                            <b>기타 문의</b>
+                            <p>기타 문의에 대한 내용</p>
+                            <span>webmaster&#64;sanriokorea.co.kr</span>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <div class="user_name">
-            <p>이름을 입력하세요</p>
-            <button class="del"><img src="./images/multiply.png" alt="닫기"></button>
-            <form>
-                <input type="text" name="userName" id="userName">
-                <button>입력</button>
-            </form>
+    </footer>
+    <aside>
+        <div class="top">
+            <img src="./images/aside_top_bg.png" alt="top_icon">
+            <div class="top_txt">
+                <img src="./images/aside_top_icon.png" alt="top_icon">
+                <p>TOP</p>
+            </div>
         </div>
-        <div class="user_list">
-            <p>할 일을 입력하세요</p>
-            <button class="del_2"><img src="./images/multiply.png" alt="닫기"></button>
-            <form>
-                <input type="text" name="userList" id="userList">
-                <button>입력</button>
-            </form>
-        </div>
-    </div>
-    
-<script>
-    let imgList = [];
-    for(i = 0; i <= 7; i++){
-        if(i != 0){
-            imgList.push(`./images/bg${i}.jpg`);
-        }
-    }
-    let rndIndex = Math.floor(Math.random() * imgList.length);
-    document.querySelector('.images').style.backgroundImage = `url(${imgList[rndIndex]})`;
-
-    function getSuccess(pos){
-        let lat = pos.coords.latitude;
-        let lon = pos.coords.longitude;
-        let key = '018766110b9d22e46197a083727d9060';
-        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=kr&appid=${key}&units=metric`;
-        fetch(url).then((response) => response.json()).then((data) => {
-            let city = data.name;
-            let weather = data.weather[0].main;
-            let temp = data.main.temp;
-            let icon = data.weather[0].icon;
-            document.querySelector('.location').innerText = city;
-            document.querySelector('.weather').innerHTML = `${weather}&nbsp&nbsp&nbsp&nbsp${temp}˚C`;
-            document.querySelector('img').src = `http://openweathermap.org/img/w/${icon}.png`;
-        })
-    }
-    function getError(){
-        document.querySelector('#weather').innerHTML = `<span>날씨를 불러올 수 없습니다.</span>`;
-    }
-    navigator.geolocation.getCurrentPosition(getSuccess, getError);
-
-    calendar();
-    function calendar(){
-        let now = new Date();
-        let year = now.getFullYear();
-        let month = now.getMonth();
-        let date = now.getDate();
-        document.querySelector('.year').innerHTML = year;
-        document.querySelector('.month').innerHTML = month + 1;
-        document.querySelector('.date').innerHTML = date + 1;
-    }
-    let time = setInterval(function(){
-        let now = new Date();
-        let hour = now.getHours();
-        let min = now.getMinutes();
-        let sec = now.getSeconds();
-        document.querySelector('.h').innerHTML = hour.toString().padStart(2,'0');
-        document.querySelector('.m').innerHTML = min.toString().padStart(2,'0');
-        document.querySelector('.s').innerHTML = sec.toString().padStart(2,'0');
-    }, 1000);
-
-    let user = '';
-    let savedName = localStorage.getItem('userName');
-    document.querySelector('.top span').innerText = savedName;
-    document.querySelector('.change').onclick = function(){
-        document.querySelector('.user_list').style.display = 'none';
-        document.querySelector('.user_name').style.display = 'block';
-        document.querySelector('#userName').focus();
-        document.querySelector('.del').onclick = function(){
-            document.querySelector('.user_name').style.display = 'none';
-        }
-        document.querySelector('.user_name > form > button').onclick = function(){
-            user = document.querySelector('#userName').value;
-            if(user != ''){
-                document.querySelector('.top > p > span').innerText = user;
-                localStorage.setItem('userName', user);
-                document.querySelector('#userName').value = '';
-                document.querySelector('.user_name').style.display = 'none';
-            } else {
-                document.querySelector('.user_name').style.display = 'none';
-            }
-            return false;
-        }
-    }
-
-    let listMenu = '';
-    document.querySelector('.add_list').onclick = function(){
-        document.querySelector('.user_name').style.display = 'none';
-        document.querySelector('.user_list').style.display = 'block';
-        document.querySelector('#userList').focus();
-        document.querySelector('.del_2').onclick = function(){
-            document.querySelector('.user_list').style.display = 'none';
-        }
-
-        document.querySelector('.user_list > form > button').onclick = function(){
-            listMenu = document.querySelector('#userList').value;
-            if(listMenu != ''){
-                let liTag = document.createElement('li');
-                let spanTag = document.createElement('span');
-                let listText = document.createTextNode(listMenu);
-                spanTag.append(listText);
-                let delBtn = document.createElement('button');
-                let imgTag = document.createElement('img');
-                delBtn.classList.add('remove');
-                imgTag.setAttribute('src', './images/free-icon-paw-8347745.png')
-                delBtn.append(imgTag);
-                liTag.append(spanTag);
-                liTag.append(delBtn);
-                document.querySelector('.list > ul').prepend(liTag);
-                document.querySelector('#userList').value = '';
-                document.querySelector('#userList').focus();
-                
-                let removeBtn = document.querySelectorAll('.remove');
-                for(i = 0; i < removeBtn.length; i++){
-                    removeBtn[i].addEventListener('click',function(){ 
-                        document.querySelector('#userList').focus();
-                        this.parentNode.remove();
-                    }) 
-                    removeBtn[i].addEventListener('mousedown', function(){
-                        document.querySelector('#userList').focus();
-                        this.parentNode.style.opacity = '0.3';
-                    })
-                    removeBtn[i].addEventListener('mousemove', function(){
-                        document.querySelector('#userList').focus();
-                        this.parentNode.style.opacity = '1';
-                    })
-                }
-            } else {
-                document.querySelector('.user_list').style.display = 'none';
-            }
-            return false;
-        }
-    }
-</script>    
+    </aside>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/jquery.bxslider.js"></script>
+<script src="./js/index.js"></script>    
 </body>
 </html>
