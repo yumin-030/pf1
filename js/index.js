@@ -76,11 +76,23 @@ let mainSlide = $('.slider').bxSlider({
 },5000);
 $('form > input').focusin(function(e){
     $('form').css('width','240px');
-})
+});
 $('form > input').focusout(function(){
-    $('form').css('width','70px');
+    $('form').css('width','40px');
     $(this).val('');
-})
+});
+let onOff = false;
+$('form > button').click(function(e){
+    if(onOff == false){
+        $('form').css('width','240px');
+        $('form > input').focus();
+        onOff = true;
+    } else if(onOff == true){
+        $('form').css('width','40px');
+        onOff = false;
+    }
+});
+
 let ap = mainSlide.getSlideCount();
 $('.wrap .next').click(function(){
     mainSlide.goToNextSlide();

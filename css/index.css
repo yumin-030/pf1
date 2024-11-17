@@ -23,34 +23,27 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollber-button {display:none;}
 header {
     width:100%;
-    height:100px;
+    height:80px;
     position:fixed;
     z-index:1;
     transition:0.5s;
 }
 header > .head_wrap {
-    width:90%;
+    width:100%;
     height:100%;
+    padding:0 300px;
+    box-sizing:border-box;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin:0 auto;
     position:relative;
     color:#fff;
 }
 .head_wrap > h1 {
-    width:240px;
+    width:200px;
 }
 .head_wrap > h1 img {
     width:100%;
-}
-.head_wrap > nav {
-    width:900px;
-    height:100px;
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0 auto;
 }
 .head_wrap > nav > ul {
     width:100%;
@@ -58,7 +51,7 @@ header > .head_wrap {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    font-size:18px;
+    font-size:16px;
     font-weight:600;
 }
 .head_wrap > nav > ul > li {
@@ -82,7 +75,7 @@ header > .head_wrap {
     left:0;
     right:0;
     margin:0 auto;
-    top:40px;
+    top:48px;
     width:100%;
     text-align:center;
     background-color:rgba(0, 0, 0, 0.6);
@@ -103,14 +96,13 @@ header > .head_wrap {
     padding:10px;
 }
 .head_wrap > form {
-    position:absolute;
-    right:0;
-    width:70px;
+    width:40px;
     height:40px;
     border:4px solid pink;
     border-radius:30px;
     background-color:pink;
     transition:0.5s;
+    position:relative;
 }
 .head_wrap > form:hover {
     width:240px;
@@ -132,12 +124,10 @@ header > .head_wrap {
     height:40px;
     background:transparent;
     border:none;
-    position:absolute;
-    margin:auto;
-    top:0;
-    bottom:0;
-    right:10px;
     cursor:pointer;
+    position:absolute;
+    right:0;
+    top:0;
 }
 .head_wrap > form button > img {
     width:100%;
@@ -146,6 +136,7 @@ header > .head_wrap {
     width:100%;
 }
 #visual > .main {
+    width:100%;
     position:relative;
 }
 #visual > .main > .wrap {
@@ -156,7 +147,6 @@ header > .head_wrap {
 }
 #visual > .main > .wrap .slider {
     display:flex;
-    width:300%;
     align-items:flex-start;
 }
 #visual > .main > .wrap .slider > .main_bg {
@@ -169,23 +159,24 @@ header > .head_wrap {
     height:100%;
     object-position:top;
     object-fit:cover;
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 #visual > .main > .wrap .slider > .main_bg > .text {
     height:30%;
-    width:1550px;
+    width:100%;
+    padding:0 300px;
+    box-sizing:border-box;
     color:#fff;
     position:absolute;
-    top:200px;
-    left:0;
-    right:0;
+    top:0;
     bottom:0;
-    margin:auto;
+    margin:auto 0;
 }
 #visual > .main > .wrap .slider > .main_bg > .text > h2 {
-    font-size:70px;
+    font-size:60px;
     font-weight:600;
     line-height:1.2;
+    margin-bottom:100px;
 }
 #visual > .main > .wrap .slider > .main_bg > .text > a {
     display:flex;
@@ -193,9 +184,6 @@ header > .head_wrap {
     justify-content:center;
     font-size:22px;
     font-weight:600;
-    position:absolute;
-    left:0;
-    bottom:-40px;
     color:pink;
     border:3px solid pink;
     text-align:center;
@@ -220,15 +208,8 @@ header > .head_wrap {
     width:100%;
     height:70px;
 }
-#visual > .main > .wrap > .controlls > .btns {
-    width:95%;
-    margin:0 auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-#visual > .main > .wrap > .controlls > .btns > button {
-    opacity:0.3;
+#visual > .main > .wrap > .controlls > button {
+    opacity:0.2;
     border:none;
     background-color:#000;
     width:70px;
@@ -238,12 +219,22 @@ header > .head_wrap {
     align-items:center;
     justify-content:center;
     transition:0.5s;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto 0;
 }
-#visual > .main > .wrap > .controlls > .btns > button:hover {
-    opacity:0.7;
+#visual > .main > .wrap > .controlls > .prev {
+    left:150px;
+}
+#visual > .main > .wrap > .controlls > .next {
+    right:150px;
+}
+#visual > .main > .wrap > .controlls > button:hover {
+    opacity:0.6;
     transition:0.5s;
 }
-#visual > .main > .wrap > .controlls > .btns > button > img {
+#visual > .main > .wrap > .controlls > button > img {
     width:30px;
 }
 #visual > .main > .wrap > .controlls > .pager {
@@ -267,10 +258,9 @@ header > .head_wrap {
     background-color:#fff;
 }
 #visual > .main > .crt {
-    width:80%;
+    width:100%;
     height:100vh;
     padding:100px 0 0 0;
-    margin:0 auto;
     text-align: center;
     position:relative;
 }
@@ -299,11 +289,9 @@ header > .head_wrap {
     width:15px;
 }
 #visual > .main > .crt > section {
-    position:absolute;
-    width:70%;
-    margin:0 auto;
-    left:0;
-    right:0;
+    width:100%;
+    padding:0 300px;
+    box-sizing:border-box;
     opacity:0;
     transition:0.5s;
 }
@@ -312,12 +300,8 @@ header > .head_wrap {
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    justify-content:flex-start;
-    gap:30px 0;
-}
-#visual > .main > .crt > section > ul > li {
-    width:25%;
-    height:250px;
+    justify-content:center;
+    gap:20px;
 }
 #visual > .main > .crt > section > ul a:hover .crts > img:first-child {
     display:none;
@@ -381,7 +365,7 @@ header > .head_wrap {
     flex-direction:column;
     justify-content:center;
     align-items:center;
-        gap:5px;
+    gap:5px;
 }
 #visual > .main > .crt > section > ul ._name > b {
     font-weight:600;
@@ -393,7 +377,8 @@ header > .head_wrap {
 }
 #visual > .main > .news {
     width:100%;
-    padding:100px 0 200px 0;
+    height:100vh;
+    padding:100px 0;
     position:relative;
 }
 #visual > .main > .news > h2 {
@@ -422,41 +407,48 @@ header > .head_wrap {
     color:#aaa;
 }
 .news > section {
+    width:100%;
+    padding:0 320px;
+    box-sizing:border-box;
     opacity:0;
     transition:0.5s;
 }
 .main > .news > section > ul {
-    width:1000px;
-    margin:0 auto;
+    width:100%;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content:center;
-    gap:20px 40px;
 }
 .main > .news > section > ul > li {
-    width:40%;
+    width:50%;
+    height:33.3%;
+    padding:20px;
+    box-sizing:border-box;
     display:flex;
-    align-items:center;
-    justify-content:center;
+    align-items:flex-start;
+    justify-content:flex-start;
 }
 #visual > .main > .news > section li img {
-    width:200px;
-    height:150px;
+    width:300px;
+    height:200px;
     margin-right:20px;
     object-fit: cover;
     object-position:bottom;
 }
 .main > .news .name {
-    height:150px;
+    width:50%;
+    height:100%;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items:flex-start;
+    gap:20px;
     word-break: keep-all;
 }
 .main > .news .name b {
     font-weight:600;
+    line-height:1.5;
 }
 .main > .news .name > a {
     font-size:12px;
@@ -469,8 +461,9 @@ header > .head_wrap {
 }
 #visual > .main > .brand {
     width:100%;
-    padding:200px 0;
-    background-color: #e2e2e2;
+    padding:100px 320px;
+    box-sizing:border-box;
+    background-color: #ddd;
     text-align:center;
     opacity:0;
     transition:0.5s;
@@ -478,7 +471,7 @@ header > .head_wrap {
 .brand > h2 {
     font-weight:bold;
     font-size:50px;
-    margin-bottom:70px;
+    margin-bottom:50px;
 }
 .brand > ul {
     display:flex;
@@ -490,11 +483,16 @@ header > .head_wrap {
     transition:0.5s;
 }
 .brand > ul > li {
-    width:250px;
-    height:200px;
-    padding:40px 0;
+    width:33.3%;
+    height:330px;
+    padding:50px;
+    box-sizing:border-box;
     background-color: #fff4b8;
     border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
 }
 .brand > ul img {
     width:80px;
@@ -522,11 +520,11 @@ header > .head_wrap {
 }
 #visual > .main > .place {
     width:100%;
-    height:850px;
+    height:950px;
     position:relative;
     text-align:center;
-    padding-top:50px;
-    margin-top:100px;
+    padding:100px 0;
+    box-sizing:border-box;
 }
 .place > h2 {
     font-weight:bold;
@@ -537,7 +535,7 @@ header > .head_wrap {
     height:700px;
     position:absolute;
     bottom:0;
-    background-image: url(../images/place_bg3.jpg);
+    background-image: url('../images/place_bg1.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size:cover;
